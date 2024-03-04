@@ -12,6 +12,13 @@ struct Home: View {
     @State private var selectedPlant: Plant?
     @State private var selectedImage: UIImage?
     @State private var isShowingImagePicker = false
+    @State private var isAlertPresented = false
+    @State private var isIdentifySelected = false
+    @State private var isDiagnoseSelected = false
+
+
+
+
     
     
     
@@ -75,15 +82,26 @@ struct Home: View {
                 VStack {
                     HStack(spacing: 50) {
                         VStack {
-                            NavigationLink(destination: GreenGuardian()) {
+                            Button(action: {
+                                isAlertPresented = true
+                            }) {
                                 Image("GreenGuardian")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: 100, height: 100)
                                     .cornerRadius(10)
                             }
+
+                            NavigationLink(destination: Identify(), isActive: $isIdentifySelected) {
+                                EmptyView()
+                            }
+                            NavigationLink(destination: Diagnose(), isActive: $isDiagnoseSelected) {
+                                EmptyView()
+                            }
                             Text("Green Guardian")
                         }
+                        
+
                         
                         VStack {
                             Image("Addimage")
@@ -168,7 +186,24 @@ struct Home: View {
                                 }.environmentObject(plantCollection)
                 
                 SproutCast()
+            }.alert(isPresented: $isAlertPresented) {
+                Alert(
+                    title: Text("Choose an action"),
+                    message: nil,
+                    primaryButton: .default(Text("Identify")) {
+                        // Handle Identify action
+                        isIdentifySelected = true
+                        
+                    },
+                    secondaryButton: .default(Text("Diagnose")) {
+                        // Handle Diagnose action
+                        isDiagnoseSelected = true
+                       
+                    }
+                )
             }
+            
+            .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: Button(action: {
                 isSideMenuPresented.toggle()
             }) {
@@ -186,6 +221,7 @@ struct Home: View {
                 .onAppear {
                     isSideMenuPresented = false
                 }
+                
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(
@@ -194,6 +230,7 @@ struct Home: View {
                     endPoint: .bottomTrailing
                 )
             )
+            
         }
     }
 }

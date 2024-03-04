@@ -30,7 +30,6 @@
 		1685F04B2B56CC6200D5984B /* Identify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F04A2B56CC6200D5984B /* Identify.swift */; };
 		1685F04D2B56CC7200D5984B /* Diagnose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F04C2B56CC7200D5984B /* Diagnose.swift */; };
 		1685F04F2B56CC9800D5984B /* Reminder1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F04E2B56CC9800D5984B /* Reminder1.swift */; };
-		1685F0552B56CCC800D5984B /* GreenGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F0542B56CCC800D5984B /* GreenGuardian.swift */; };
 		1685F0572B56CCDA00D5984B /* PaudhaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F0562B56CCDA00D5984B /* PaudhaTabView.swift */; };
 		1685F0592B56CCEE00D5984B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F0582B56CCEE00D5984B /* SearchView.swift */; };
 		16D34E052B8662D600F5CAC4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D34E042B8662D600F5CAC4 /* LocationManager.swift */; };
@@ -56,6 +55,8 @@
 		7FAC235B2B834307007338DD /* HomePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC235A2B834307007338DD /* HomePreview.swift */; };
 		7FAC235E2B83BB82007338DD /* QuoteKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7FAC235D2B83BB82007338DD /* QuoteKit */; };
 		7FAC23602B83BD0F007338DD /* QuoteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC235F2B83BD0F007338DD /* QuoteKit.swift */; };
+		7FC60F7C2B94BD440064EAC8 /* leafesDiagnose.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7FC60F7B2B94BD440064EAC8 /* leafesDiagnose.mlmodel */; };
+		7FC60F7E2B94BD560064EAC8 /* tableDiag2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FC60F7D2B94BD560064EAC8 /* tableDiag2.csv */; };
 		7FD93E4C2B85B60300FA9F0F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD93E4B2B85B60300FA9F0F /* LoginView.swift */; };
 		7FD93E562B85F3F900FA9F0F /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD93E552B85F3F900FA9F0F /* BotResponse.swift */; };
 		7FD93E582B85F41200FA9F0F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD93E572B85F41200FA9F0F /* ChatView.swift */; };
@@ -83,7 +84,6 @@
 		1685F04A2B56CC6200D5984B /* Identify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identify.swift; sourceTree = "<group>"; };
 		1685F04C2B56CC7200D5984B /* Diagnose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnose.swift; sourceTree = "<group>"; };
 		1685F04E2B56CC9800D5984B /* Reminder1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder1.swift; sourceTree = "<group>"; };
-		1685F0542B56CCC800D5984B /* GreenGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGuardian.swift; sourceTree = "<group>"; };
 		1685F0562B56CCDA00D5984B /* PaudhaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaudhaTabView.swift; sourceTree = "<group>"; };
 		1685F0582B56CCEE00D5984B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		16D34E042B8662D600F5CAC4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -108,6 +108,8 @@
 		7FAC23582B8342DA007338DD /* ContactAndSocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAndSocialView.swift; sourceTree = "<group>"; };
 		7FAC235A2B834307007338DD /* HomePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePreview.swift; sourceTree = "<group>"; };
 		7FAC235F2B83BD0F007338DD /* QuoteKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteKit.swift; sourceTree = "<group>"; };
+		7FC60F7B2B94BD440064EAC8 /* leafesDiagnose.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = leafesDiagnose.mlmodel; sourceTree = "<group>"; };
+		7FC60F7D2B94BD560064EAC8 /* tableDiag2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tableDiag2.csv; sourceTree = "<group>"; };
 		7FD93E4B2B85B60300FA9F0F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7FD93E552B85F3F900FA9F0F /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
 		7FD93E572B85F41200FA9F0F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -159,6 +161,8 @@
 		1685F0352B56C59400D5984B /* PaudhaUI */ = {
 			isa = PBXGroup;
 			children = (
+				7FC60F7D2B94BD560064EAC8 /* tableDiag2.csv */,
+				7FC60F7B2B94BD440064EAC8 /* leafesDiagnose.mlmodel */,
 				7FA9A6A52B8C7FBE00BD860E /* plant_LandD.csv */,
 				7FA9A6A32B8C7F9300BD860E /* Identification.mlmodel */,
 				160532F72B5988DB007D6708 /* Models */,
@@ -187,7 +191,6 @@
 				7FAC23472B834087007338DD /* HomePage */,
 				1685F04A2B56CC6200D5984B /* Identify.swift */,
 				1685F04C2B56CC7200D5984B /* Diagnose.swift */,
-				1685F0542B56CCC800D5984B /* GreenGuardian.swift */,
 				7FD93E4B2B85B60300FA9F0F /* LoginView.swift */,
 				1685F0562B56CCDA00D5984B /* PaudhaTabView.swift */,
 				1685F0582B56CCEE00D5984B /* SearchView.swift */,
@@ -318,6 +321,7 @@
 				1685F03E2B56C59500D5984B /* Preview Assets.xcassets in Resources */,
 				1685F03B2B56C59500D5984B /* Assets.xcassets in Resources */,
 				7FA9A6A62B8C7FBE00BD860E /* plant_LandD.csv in Resources */,
+				7FC60F7E2B94BD560064EAC8 /* tableDiag2.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +344,7 @@
 				1655FE302B57F2F800CF8D0F /* ImagePicker.swift in Sources */,
 				7FAC23512B83422D007338DD /* AddBuddyView.swift in Sources */,
 				7F178BA62B7B473500A9F0B1 /* RemindersView.swift in Sources */,
+				7FC60F7C2B94BD440064EAC8 /* leafesDiagnose.mlmodel in Sources */,
 				7F178BAA2B7B476E00A9F0B1 /* ReminderRowView.swift in Sources */,
 				1685F04B2B56CC6200D5984B /* Identify.swift in Sources */,
 				1655FE2C2B57E68900CF8D0F /* CameraView.swift in Sources */,
@@ -350,7 +355,6 @@
 				7FAC23532B834282007338DD /* SideMenuView.swift in Sources */,
 				1685F04F2B56CC9800D5984B /* Reminder1.swift in Sources */,
 				1685F0372B56C59400D5984B /* PaudhaUIApp.swift in Sources */,
-				1685F0552B56CCC800D5984B /* GreenGuardian.swift in Sources */,
 				7FAC234D2B834125007338DD /* Plant.swift in Sources */,
 				7FA9A6A42B8C7F9300BD860E /* Identification.mlmodel in Sources */,
 				165A0DE62B85E3D60030A760 /* GlassBackground.swift in Sources */,

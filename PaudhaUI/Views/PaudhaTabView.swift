@@ -29,7 +29,7 @@ struct PaudhaTabView: View {
             ChatView()
                 .tabItem { Image(systemName: "camera.macro")
                 Text("Pixxie")}
-        }
+        }.navigationBarBackButtonHidden(true)
         }
         
     }
