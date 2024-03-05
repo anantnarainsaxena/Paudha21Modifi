@@ -92,13 +92,11 @@ struct LoginView: View {
                 }
                 Spacer()
             }
-            .navigationBarHidden(true)
-            // Use NavigationLink to navigate to the home page
-            .navigationBarBackButtonHidden(true)
+            
             .background(NavigationLink(destination: PaudhaTabView(), isActive: $isLogged) {
                 EmptyView()
             })
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
