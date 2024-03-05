@@ -23,9 +23,7 @@ struct PaudhaTabView: View {
             RemindersView()
                 .tabItem { Image(systemName: "list.clipboard")
                 Text("Reminder")}
-            SearchView()
-                .tabItem { Image(systemName: "magnifyingglass")
-                Text("Search")}
+
             ChatView()
                 .tabItem { Image(systemName: "camera.macro")
                 Text("Pixxie")}

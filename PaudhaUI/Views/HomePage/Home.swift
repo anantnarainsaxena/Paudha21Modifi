@@ -210,14 +210,32 @@ struct Home: View {
             }
             
             .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading: Button(action: {
-                isSideMenuPresented.toggle()
-            }) {
-                Image(systemName: "line.horizontal.3")
-                    .imageScale(.large)
-                    .padding()
-                    .foregroundColor(.white)
-            })
+//            .navigationBarItems(leading: Button(action: {
+//                isSideMenuPresented.toggle()
+//            }) {
+//                Image(systemName: "line.horizontal.3")
+//                    .imageScale(.large)
+//                    .padding()
+//                    .foregroundColor(.white)
+//            })
+            .navigationBarItems(
+                leading: Button(action: {
+                    isSideMenuPresented.toggle()
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                        .imageScale(.large)
+                        .padding()
+                        .foregroundColor(.black)
+                },
+                trailing: NavigationLink(destination: SearchView()) {
+                        Image(systemName: "magnifyingglass")
+                            .imageScale(.large)
+                            .padding()
+                            .foregroundColor(.black
+                            )
+                    }
+            )
+
             .navigationBarTitle("", displayMode: .inline)
             .background(
                 NavigationLink(destination: SideMenuView(isSideMenuPresented: $isSideMenuPresented), isActive: $isSideMenuPresented) {

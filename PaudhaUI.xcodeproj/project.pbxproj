@@ -518,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PaudhaUI/Preview Content\"";
-				DEVELOPMENT_TEAM = XBJQ5TLTM7;
+				DEVELOPMENT_TEAM = QVLUX8NLW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow camera to scan";
@@ -548,7 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PaudhaUI/Preview Content\"";
-				DEVELOPMENT_TEAM = XBJQ5TLTM7;
+				DEVELOPMENT_TEAM = QVLUX8NLW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow camera to scan";

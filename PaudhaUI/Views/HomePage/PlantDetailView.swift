@@ -20,27 +20,24 @@ struct PlantDetailView: View {
             }
             
             VStack(alignment: .leading, spacing: 16) {
-                Text("Nickname:")
-                    .font(.title)
-                    .fontWeight(.bold)
+                Text("Nickname")
+                    .font(.headline)
                     .foregroundColor(.primary)
                 
                 Text(plant.nickname)
                     .font(.title2)
                     .foregroundColor(.secondary)
                 
-                Text("Type:")
-                    .font(.title)
-                    .fontWeight(.bold)
+                Text("Type")
+                    .font(.headline)
                     .foregroundColor(.primary)
                 
                 Text(plant.type)
                     .font(.title2)
                     .foregroundColor(.secondary)
                 
-                Text("Buddy's Story:")
-                    .font(.title)
-                    .fontWeight(.bold)
+                Text("Description")
+                    .font(.headline)
                     .foregroundColor(.primary)
                 
                 Text(plant.description)
@@ -49,16 +46,21 @@ struct PlantDetailView: View {
                     .multilineTextAlignment(.leading)
             }
             .padding()
+            .background(Color.white.opacity(0.9))
+            .cornerRadius(20)
+            .shadow(radius: 5)
             
             Spacer()
-        }.background(
+        }
+        .padding()
+        .background(
             LinearGradient(gradient: Gradient(colors: [Color(red: 0.9686, green: 0.8824, blue: 0.8431), Color(red: 240/255.0, green: 255/255.0, blue: 241/255.0)]),
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing
             )
         )
+        
         .navigationBarTitle("Plant Details", displayMode: .inline)
-        .background(Color(.systemBackground))
         .edgesIgnoringSafeArea(.all)
     }
     
