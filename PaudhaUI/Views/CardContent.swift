@@ -19,37 +19,29 @@ struct CardContent: View {
     
     
     var body: some View {
-        VStack {
-            
-            VStack{
-                 Text("Best Results...").font(.system(size:20, weight:.bold,design: .default)).foregroundColor(Color("bestResults"))
-                 
-                 Image("identify")
-                     .resizable()
-                     .frame(width: 250, height: 200)
-                     .cornerRadius(27)
-//                         .overlay(
-//                             Button(action: {
-//                                 // Handle button action
-//                             }) {
-//                                 Image("addToCollection")
-//                                     .resizable()
-//                                     .aspectRatio(contentMode: .fill)
-//                                     .frame(width: 73, height: 73)
-//                                     .cornerRadius(50).offset(x: 130,y: 140)
-//                             }
-//                         )
-                 
-                 Text("Golden Pothos").font(.system(size: 20,weight: .bold))
-                 Text("(Epipremnum aureum)").italic().font(.system(size: 15,weight: .medium))
-                 
-             }
-            Text("Overview")
-
-
-            // Integrate the SwipeableCardStackView
-            SwipeableCardStackView(cards: $cards)
+        ScrollView{
+            VStack {
+                
+                VStack{
+                    Text("Best Results...").font(.system(size:20, weight:.bold,design: .default)).foregroundColor(Color("bestResults"))
+                    
+                    Image("identify")
+                        .resizable()
+                        .frame(width: 250, height: 200)
+                        .cornerRadius(27)
+                    
+                    
+                    Text("Golden Pothos").font(.system(size: 20,weight: .bold))
+                    Text("(Epipremnum aureum)").italic().font(.system(size: 15,weight: .medium))
+                    
+                }
+                Text("Overview")
+                
+                
+                // Integrate the SwipeableCardStackView
+                SwipeableCardStackView(cards: $cards)
+            }
+            .padding()
         }
-        .padding()
     }
 }

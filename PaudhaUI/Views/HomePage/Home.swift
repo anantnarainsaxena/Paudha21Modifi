@@ -122,10 +122,10 @@ struct Home: View {
                                      .font(.system(size: 20, weight: .medium, design: .none))
                                  Text(currentQuote)
                                      .font(.system(size: 17, weight: .light, design: .none))
-                             }
+                             }.multilineTextAlignment(.center)
                              .frame(width: 370, height: 110)
                              .background(Color.white.opacity(0.2))
-                             .shadow(radius: 5)
+                             
                              .cornerRadius(20)
                              .onAppear {
                                  // Set up a timer to change the quote every 5 minutes
@@ -138,7 +138,7 @@ struct Home: View {
                          }
                 
                 VStack {
-                                                    Text("My Collection")
+                                                    Text("My Buddies!")
                                                         .frame(width: 350, alignment: .leading)
                                                         .font(.title)
                                                         .fontWeight(.bold)
@@ -178,7 +178,7 @@ struct Home: View {
                                                                                                 }
                                                                                             }
                                                                                             .padding(8)
-                                                                                            .background(Color.white.opacity(0.5))
+                                                                                            .background(Color.green.opacity(0.2))
                                                                                             .cornerRadius(15)
                                                                                         }
                                                                                         .sheet(item: $selectedPlant) { plant in
@@ -248,12 +248,12 @@ struct Home: View {
                 
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                LinearGradient(gradient: Gradient(colors: [Color(red: 0.9686, green: 0.8824, blue: 0.8431), Color(red: 240/255.0, green: 255/255.0, blue: 241/255.0)]),
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-            )
+//            .background(
+//                LinearGradient(gradient: Gradient(colors: [Color(red: 0.9686, green: 0.8824, blue: 0.8431), Color(red: 240/255.0, green: 255/255.0, blue: 241/255.0)]),
+//                    startPoint: .topLeading,
+//                    endPoint: .bottomTrailing
+//                )
+//            )
             
         }
     }
